@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import Jobs from "../Schema/jobSchema.js";
 
 export const getJobs = async (req, res) => {
-
+   console.log(" i am getting called");
     try {
 
         const allJobs = await Jobs.find({});
